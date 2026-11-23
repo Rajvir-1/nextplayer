@@ -514,7 +514,16 @@ fun NavigationView(
                 shape = CircleShape,
             )
             .clip(shape = CircleShape)
-            .background(MaterialTheme.colorScheme.surfaceContainer)
+            .background(
+    brush = Brush.linearGradient(
+        colors = listOf(
+            Color.White.copy(alpha = 0.22f),
+            Color.White.copy(alpha = 0.06f),
+            Color.White.copy(alpha = 0.14f)
+        )
+    ),
+    shape = CircleShape
+)
             .padding(4.dp),
     ) {
         LookaheadScope {
