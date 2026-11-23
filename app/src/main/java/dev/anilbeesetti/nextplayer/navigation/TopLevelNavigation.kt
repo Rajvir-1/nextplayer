@@ -515,22 +515,15 @@ fun NavigationView(
                 shape = CircleShape,
             )
             .clip(shape = CircleShape)
-            .background(
-    brush = Brush.linearGradient(
-        colors = listOf(
-            Color.White.copy(alpha = 0.22f),
-            Color.White.copy(alpha = 0.06f),
-            Color.White.copy(alpha = 0.14f)
-        )
-    ),
-    shape = CircleShape
-)
-            .border(
-    width = 1.dp,
-    color = Color.White.copy(alpha = 0.28f),
-    shape = CircleShape
-)
-            .padding(4.dp),
+                                            .background(
+                                    brush = Brush.linearGradient(
+                                        colors = listOf(
+                                            Color.White.copy(alpha = 0.22f),
+                                            Color.White.copy(alpha = 0.08f),
+                                        ),
+                                    ),
+                                    shape = CircleShape,
+                                ),
     ) {
         LookaheadScope {
             val pill = remember {
