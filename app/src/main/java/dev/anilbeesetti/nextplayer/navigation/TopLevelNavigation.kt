@@ -544,7 +544,15 @@ fun NavigationView(
                                     boundsTransform = boundsTransform,
                                 )
                                 .clip(shape = CircleShape)
-                                .background(MaterialTheme.colorScheme.secondaryContainer),
+                                .background(
+    brush = Brush.linearGradient(
+        colors = listOf(
+            Color.White.copy(alpha = 0.22f),
+            Color.White.copy(alpha = 0.08f)
+        )
+    ),
+    shape = CircleShape
+),
                         )
                     }
                 }
