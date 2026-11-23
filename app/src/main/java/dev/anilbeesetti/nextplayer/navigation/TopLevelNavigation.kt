@@ -525,6 +525,11 @@ fun NavigationView(
     ),
     shape = CircleShape
 )
+            .border(
+    width = 1.dp,
+    color = Color.White.copy(alpha = 0.28f),
+    shape = CircleShape
+)
             .padding(4.dp),
     ) {
         LookaheadScope {
